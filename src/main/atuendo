@@ -1,0 +1,51 @@
+
+class Atuendo{
+    List<Prenda> prendas
+
+    boolean validarAtuendo{
+        for(Prenda prenda:prendas){
+            if (prenda.validarPrenda()){
+            }else
+                return false
+        }
+        return true
+    }
+}
+
+class Prenda{
+    Categoria cat,
+    String mat,
+    TipoP tipo,
+    Color color1,
+    Color color2
+
+    boolean validarCategoria(){
+        this.tipo.cat == this.cat
+    }
+}
+
+    boolean validarPrenda(){
+        if (this.validarCategoria()=false) {
+            return false
+        }
+        ifn(this.cat || this.tipo || this.color1) {
+            return false
+        }else
+        return true
+    }
+
+
+class TipoP{
+    String tipo,
+    Categoria cat
+}
+
+public enum Categoria{
+    PARTE_SUPERIOR, CALZADO, PARTE_INFERIOR, ACCESORIOS
+}
+
+public enum Color{
+    ROJO, VERDE, AZUL, NARANJA, AMARILLO, VIOLETA, null
+}
+
+
