@@ -47,5 +47,5 @@ public enum Categoria{
 public enum Color{
     ROJO, VERDE, AZUL, NARANJA, AMARILLO, VIOLETA, null
 }
-
+asdsaddsa
 
